@@ -98,7 +98,7 @@ body {
 }
 
 .home-content h1 {
-  font-size: 100px;
+  font-size: 95px;
   font-weight: 700;
   line-height: 1.2;
   position: relative;
@@ -209,7 +209,7 @@ body {
 
 .home-sci {
   position: absolute;
-  bottom: 40px;
+  bottom: -40px;
   width: 170px;
   display: flex;
   justify-content: space-between;
