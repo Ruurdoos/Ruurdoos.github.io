@@ -1,64 +1,72 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Ihr Website-Titel</title>
-  <meta name="description" content="Beschreibung Ihrer Webseite">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Ihr Website-Titel</title>
+    <meta name="description" content="Beschreibung Ihrer Webseite">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="Ihr Website-Titel">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ihrewebseite.com">
-  <meta property="og:image" content="pfad/zum/bild.jpg">
+    <meta property="og:title" content="Ihr Website-Titel">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ihrewebseite.com">
+    <meta property="og:image" content="pfad/zum/bild.jpg">
 
-  <link rel="manifest" href="../site.webmanifest">
-  <link rel="apple-touch-icon" href="../icon.png">
-  <!-- Platzieren Sie favicon.ico im Stammverzeichnis -->
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="icon" type="tiff" href="icon.png.tiff">
 
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/main.css">
 
-  <meta name="theme-color" content="#fafafa">
+    <!-- Platzieren Sie favicon.ico im Stammverzeichnis -->
 
-  <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+
+    <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 <header class="header">
-  <a href="#" class="logo">Oosterwoud.</a>
+    <a href="#" class="logo">Oosterwoud.</a>
 
-  <nav class="navbar">
-    <a href="#" class="active">Home</a>
-<!--    <a href="#">Über uns</a>-->
-<!--    <a href="#">Dienstleistungen</a>-->
-<!--    <a href="#">Kontakt</a>-->
-  </nav>
+    <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Projects
+                <i class="bx bx-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Altersrechner.html">Altersrechner - Wie alt bin ich (coming soon)</a>
+            </div>
+        </div>
+        <!-- Weitere Links können hier hinzugefügt werden -->
+    </nav>
 </header>
 
 <section class="home">
-  <div class="home-content">
-    <h1>
-      SOFTWARE DEVELOPER
-      IN THE MAKING</h1>
-    <p> <span> Oosterwoud, a budding programmer, 29 years old. On the exciting journey of</span>
-      <span> building my first website. I am passionately committed to learning coding and</span>
-      <span> exploring the fast world of technology.</span> </p>
+    <div class="home-content">
+        <h1>
+            SOFTWARE DEVELOPER
+            IN THE MAKING</h1>
+        <p><span> Oosterwoud, a budding programmer, 29 years old. On the exciting journey of</span>
+            <span> building my first website. I am passionately committed to learning coding and</span>
+            <span> exploring the fast world of technology.</span></p>
 
-    <div class="btn-box">
-      <a href="#">My Projects</a>
-      <a href="#">Let`s Talk</a>
+        <div class="btn-box">
+<!--            <a href="#">My Projects</a>-->
+            <a href="#">Let`s Talk</a>
+        </div>
     </div>
-  </div>
 
+    <div class="home-sci">
+        <a href="https://www.linkedin.com/in/ruurd-oosterwoud-0ba4831a9"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/Ruurdoos"><i class='bx bxl-github'></i></a>
+        <a href="#"><i class='bx bx-joystick-alt'></i></a>
+    </div>
 
-  <div class="home-sci">
-    <a href="https://www.linkedin.com/in/ruurd-oosterwoud-0ba4831a9"><i class='bx bxl-linkedin'></i></a>
-    <a href="https://github.com/Ruurdoos"><i class='bx bxl-github' ></i></a>
-    <a href="#"><i class='bx bx-joystick-alt'></i></a>
-  </div>
-
-  <span class="check-imgHover"></span>
+    <span class="check-imgHover"></span>
 </section>
+
 
 <script src="../js/plugins.js"></script>
 <script src="main.js"></script>
