@@ -1,19 +1,140 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alter Berechnen</title>
-    <link rel="stylesheet" href="altersrechner.css">
+    <link href="Altersrechner.css">
+    <title>Alter berechnen</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        label, button, input {
+            font-size: 1rem;
+            margin: 5px;
+        }
+
+        input, button {
+            padding: 10px;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #007bff;
+            border: none;
+            color: white;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+
+        .output {
+            margin: 5px 0;
+        }
+        .spacer {
+            margin: 20px 0;
+        }
+    </style>
+    <script>
+        function calculateAge() {
+            const birthdateInput = document.getElementById('birthdate').value;
+            if (birthdateInput) {
+                const birthdate = new Date(birthdateInput);
+                const now = new Date();
+
+                let ageYears = now.getFullYear() - birthdate.getFullYear();
+                let ageMonths = now.getMonth() - birthdate.getMonth();
+                let ageDays = now.getDate() - birthdate.getDate();
+
+                if (ageDays < 0) {
+                    ageMonths--;
+                    const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+                    ageDays += prevMonth.getDate();
+                }
+                if (ageMonths < 0) {
+                    ageYears--;
+                    ageMonths += 12;
+                }
+
+                const ageInWeeks = Math.floor((now - birthdate) / (7 * 24 * 60 * 60 * 1000));
+                const ageInDays = Math.floor((now - birthdate) / (24 * 60 * 60 * 1000));
+                const ageInHours = Math.floor((now - birthdate) / (60 * 60 * 1000));
+                const ageInMinutes = Math.floor((now - birthdate) / (60 * 1000));
+
+                function updateSeconds() {
+                    const current = new Date();
+                    const ageInSeconds = Math.floor((current - birthdate) / 1000);
+                    document.getElementById('ageInSeconds').textContent = `Sekunden: ${ageInSeconds}`;
+
+                    const totalYears = current.getFullYear() - birthdate.getFullYear();
+                    const totalMonths = (current.getFullYear() - birthdate.getFullYear()) * 12 + current.getMonth() - birthdate.getMonth();
+                    const totalDays = Math.floor((current - birthdate) / (24 * 60 * 60 * 1000));
+                    const totalHours = Math.floor((current - birthdate) / (60 * 60 * 1000));
+                    const totalMinutes = Math.floor((current - birthdate) / (60 * 1000));
+
+                    const elapsedYears = Math.floor(totalDays / 365.25);
+                    const elapsedMonths = Math.floor((totalDays % 365.25) / 30.44);
+                    const elapsedDays = Math.floor(totalDays % 30.44);
+                    const elapsedHours = current.getHours() - birthdate.getHours();
+                    const elapsedMinutes = current.getMinutes() - birthdate.getMinutes();
+                    const elapsedSeconds = current.getSeconds() - birthdate.getSeconds();
+
+                    document.getElementById('exactAge').textContent = `Genaues Alter: ${elapsedYears} Jahre, ${elapsedMonths} Monate, ${elapsedDays} Tage, ${elapsedHours} Stunden, ${elapsedMinutes} Minuten, ${elapsedSeconds} Sekunden`;
+                }
+
+                updateSeconds();
+                setInterval(updateSeconds, 1000);
+
+                document.getElementById('age').textContent = 'Dein Alter in';
+                document.getElementById('ageInYears').textContent = `Jahren: ${ageYears}`;
+                document.getElementById('ageInMonths').textContent = `Monaten: ${ageMonths}`;
+                document.getElementById('ageInWeeks').textContent = `Wochen: ${ageInWeeks}`;
+                document.getElementById('ageInDays').textContent = `Tagen: ${ageInDays}`;
+                document.getElementById('ageInHours').textContent = `Stunden: ${ageInHours}`;
+                document.getElementById('ageInMinutes').textContent = `Minuten: ${ageInMinutes}`;
+            } else {
+                document.getElementById('age').textContent = 'Bitte ein Geburtsdatum eingeben.';
+                document.getElementById('ageInYears').textContent = '';
+                document.getElementById('ageInMonths').textContent = '';
+                document.getElementById('ageInWeeks').textContent = '';
+                document.getElementById('ageInDays').textContent = '';
+                document.getElementById('ageInHours').textContent = '';
+                document.getElementById('ageInMinutes').textContent = '';
+                document.getElementById('ageInSeconds').textContent = '';
+                document.getElementById('exactAge').textContent = '';
+            }
+        }
+    </script>
 </head>
 <body>
 <div class="container">
-    <h1>Dein Alter berechnen</h1>
     <label for="birthdate">Geburtsdatum:</label>
-    <input type="date" id="birthdate" name="birthdate">
+    <input type="date" id="birthdate">
     <button onclick="calculateAge()">Alter berechnen</button>
-    <p id="age"></p>
+    <div id="exactAge" class="output"></div>
+    <div class="spacer"></div>
+    <div id="age" class="output"></div>
+    <div id="ageInYears" class="output"></div>
+    <div id="ageInMonths" class="output"></div>
+    <div id="ageInWeeks" class="output"></div>
+    <div id="ageInDays" class="output"></div>
+    <div id="ageInHours" class="output"></div>
+    <div id="ageInMinutes" class="output"></div>
+    <div id="ageInSeconds" class="output"></div>
+
 </div>
-<script src="script.js"></script>
 </body>
 </html>
