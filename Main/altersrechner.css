@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 100px;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+label, button, input {
+    font-size: 1rem;
+    margin: 5px;
+}
+
+input, button {
+    padding: 10px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    border: none;
+    color: white;
+}
+
+button:hover {
+    background-color: red;
+}
