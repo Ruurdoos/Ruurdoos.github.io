@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    align-content: space-around;
+    border: lightslategray solid 1px;
+    padding: 10px;
+}
+.header__logo {
+    justify-content: flex-start;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-around;
+}
