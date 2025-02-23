@@ -1,15 +1,79 @@
 .header {
     display: flex;
-    align-content: space-around;
     border: lightslategray solid 1px;
     padding: 10px;
 }
 .header__logo {
-    justify-content: flex-start;
+    justify-items: flex-start;
+    align-items: flex-start;
+    padding-right: 50%;
 }
 
 .header__menu {
     display: flex;
-    justify-content: flex-end;
-    align-content: space-around;
+    flex: auto;
+    justify-content: space-around;
+}
+
+.header__about {
+
+}
+
+.header__work {
+
+}
+
+.header__contact {
+
+}
+
+.hero {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+.hero__leftside {
+    margin: 5% 5% 5% 5%
+}
+
+.hero__rightside {
+
+}
+
+.hero__text {
+    display: flex;
+    font-size: 4vh;
+
+}
+
+.hero__img {
+    width: 35vw;
+    height: auto;
+    border-radius: 30%;
+    margin-right: 20%;
+}
+
+.Portfolio {
+}
+
+.Portfolio__Projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Portfolio__img {
+    width: 35vw;
+    height: auto;
+    border-radius: 30%;
+}
+
+.Portfolio__Projektname {
+    margin: 5px 0 0 0;
+}
+
+.Portfolio__Projectdesciption {
+    margin: 0 0 5% 0;
 }
