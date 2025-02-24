@@ -31,7 +31,7 @@
     display: flex;
     margin-top: 5%;
     justify-content: space-between;
-    height: 90vh;
+    margin-bottom: 5%;
 }
 
 .hero__leftside {
@@ -76,4 +76,20 @@
 
 .Portfolio__Projectdesciption {
     margin: 0 0 5% 0;
+}
+
+.About-me__text-wrapper {
+    margin-bottom: 5%;
+}
+
+.About-me__picture-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.About-me__img {
+    width: 30vw;
+    height: auto;
+    border-radius: 50%;
 }
