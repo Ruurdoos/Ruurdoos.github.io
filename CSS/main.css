@@ -93,3 +93,27 @@
     height: auto;
     border-radius: 50%;
 }
+
+
+.Contact-me__social-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Contact-me__LinkedIn {
+    border: red solid 5px;
+}
+
+.Contact-me__GitHub {
+    border: red solid 5px;
+}
+
+.Contact-me__Email {
+    border: red solid 5px;
+}
+
+.Portfolio__icon {
+    width: 20vw;
+    height: auto;
+}
