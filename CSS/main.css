@@ -137,3 +137,20 @@
     margin: 0;
     padding: 0;
 }
+
+.Footer {
+    margin-top: 5%;
+}
+
+.Footer__line {
+    width: 30%;
+}
+
+.text__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__text {
+
+}
