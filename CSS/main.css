@@ -35,10 +35,11 @@
 }
 
 .hero__leftside {
-    margin: 5% 5% 5% 5%
+    margin: 0% 5% 5% 5%
 }
 
 .hero__rightside {
+    display: flex;
 
 }
 
@@ -49,7 +50,7 @@
 }
 
 .hero__img {
-    width: 35vw;
+    width: 80%;
     height: auto;
     border-radius: 30%;
     margin-right: 20%;
@@ -80,6 +81,8 @@
 
 .About-me__text-wrapper {
     margin-bottom: 5%;
+    margin-left: 5%;
+
 }
 
 .About-me__picture-wrapper {
@@ -103,6 +106,10 @@
     margin-top: 2%;
 }
 
+.Contact-me__header {
+    margin-left: 5%;
+            }
+
 .Contact-me__LinkedIn {
     border: grey solid 1px;
     width: 18vw;
@@ -113,19 +120,37 @@
     border: grey solid 1px;
     width: 18vw;
     padding: 5px;
+
 }
 
 .Contact-me__Email {
     border: grey solid 1px;
     width: 18vw;
     padding: 5px;
+
+}
+
+.Contact-me__headerwrapper {
+    justify-content:flex-end ;
+    display: flex;
+}
+
+Contact-me__header {
+
 }
 
 .Portfolio__icon {
     width: 5vw;
     height: auto;
     padding: 0;
+    margin-left: 5%;
 
+}
+
+
+.About-me__heading-wrapper{
+    font-size: 20px;
+    padding-left: 5%;
 }
 
 .Portfolio__iconwrapper {
@@ -133,9 +158,17 @@
     padding: 0;
 }
 
+.Portfolio__heading {
+    font-size: 20px;
+    padding-left: 5%;
+}
+
 .Contact-me__text {
-    margin: 0;
+    margin: 0 0 0 5%;
     padding: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .Footer {
