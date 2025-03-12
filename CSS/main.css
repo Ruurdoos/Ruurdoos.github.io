@@ -1,8 +1,51 @@
+
+
+/* Default */
+
+
+h2 {
+    font-size: 3vw;
+    font-family: 'Geist', sans-serif;
+}
+
+p {
+    font-size: 1.5vw;
+    font-family: 'Geist', sans-serif;
+}
+
+h3 {
+    font-size: 2vw;
+    font-family: 'Geist', sans-serif;
+}
+
+@font-face {
+    font-family: 'Geist';
+    src: url('../assets/webfonts'); /* IE9 Compat Modes */
+    src: url('../assets/webfonts?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../assets/webfonts/Geist-Regular.woff2') format('woff2'); /* Super Modern Browsers */
+    /*url('fonts/meinfont.woff') format('woff'), !* Modern Browsers *!*/
+    /*url('fonts/meinfont.ttf') format('truetype'), !* Safari, Android, iOS *!*/
+    /*url('fonts/meinfont.svg#meinfont') format('svg'); !* Legacy iOS *!*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Geist', sans-serif;
+}
+
+
+
+/* End Default */
+
+
 .header {
     display: flex;
     border: lightslategray solid 1px;
     padding: 10px;
+    font-size: 2vw;
 }
+
 .header__logo {
     justify-items: flex-start;
     align-items: flex-start;
@@ -50,10 +93,9 @@
 }
 
 .hero__img {
-    width: 80%;
+    width: 30vw;
     height: auto;
-    border-radius: 30%;
-    margin-right: 20%;
+    border-radius: 25%;
 }
 
 .Portfolio {
@@ -92,9 +134,9 @@
 }
 
 .About-me__img {
-    width: 30vw;
+    width: 15vw;
     height: auto;
-    border-radius: 50%;
+    border-radius: 30%;
 }
 
 
@@ -107,7 +149,8 @@
 }
 
 .Contact-me__header {
-    margin-left: 5%;
+    margin: 5% 0 0 0;
+    padding: 0;
             }
 
 .Contact-me__LinkedIn {
@@ -153,6 +196,11 @@ Contact-me__header {
     padding-left: 5%;
 }
 
+.About-me__heading {
+    margin: 0;
+    padding: 0;
+}
+
 .Portfolio__iconwrapper {
     margin: 0;
     padding: 0;
@@ -164,8 +212,6 @@ Contact-me__header {
 }
 
 .Contact-me__text {
-    margin: 0 0 0 5%;
-    padding: 0;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
