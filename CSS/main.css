@@ -78,7 +78,7 @@ body {
 }
 
 .hero__leftside {
-    margin: 0% 5% 5% 5%
+    margin: 0 5% 5% 5%
 }
 
 .hero__rightside {
@@ -176,10 +176,6 @@ body {
 .Contact-me__headerwrapper {
     justify-content:flex-end ;
     display: flex;
-}
-
-Contact-me__header {
-
 }
 
 .Portfolio__icon {
