@@ -8,9 +8,17 @@ h2 {
     font-family: 'Geist', sans-serif;
 }
 
+img {
+    padding: 0;
+    margin: 0;
+}
+
 p {
     font-size: 1.5vw;
     font-family: 'Geist', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 h3 {
@@ -32,34 +40,51 @@ h3 {
 
 body {
     font-family: 'Geist', sans-serif;
+    background: linear-gradient(to bottom right, #e8dbd1, #cbbeb1);
 }
 
 
 
 /* End Default */
 
-
 .header {
+    position: fixed;
+    width: 90%;
     display: flex;
-    border: lightslategray solid 1px;
-    padding: 10px;
-    font-size: 2vw;
+    top: 0;
+    margin: 1% 1% 1% 1%;
+    padding: 1%;
+    /*background-color: rgba(203, 188, 174, 0.8);*/
+    overflow: hidden;
+    z-index: 10;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 2px 2px 10px rgba(5, 5, 5, 0.5);
 }
+
 
 .header__logo {
     justify-items: flex-start;
     align-items: flex-start;
     padding-right: 50%;
+    padding-left: 2%;
 }
 
 .header__menu {
     display: flex;
     flex: auto;
     justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__point {
+    text-decoration: none;
+    color: black;
 }
 
 .header__about {
-
 }
 
 .header__work {
@@ -70,41 +95,104 @@ body {
 
 }
 
-.hero {
+
+
+
+.header {
+    position: fixed;
+    width: 90%;
     display: flex;
-    margin-top: 5%;
-    justify-content: space-between;
-    margin-bottom: 5%;
+    top: 0;
+    margin: 1% 1% 1% 1%;
+    padding: 1%;
+    border: black solid 1px;
+    border-radius: 40px;
+    background-color: rgba(128, 128, 128, 0.8); /* Make background slightly transparent */
+    overflow: hidden;
+    z-index: 10;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    min-height: 100vh;
+    display: flex;
+}
+
+
+.hero__background {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: translateX(-50px);
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hero__background img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
 }
 
 .hero__leftside {
-    margin: 0 5% 5% 5%
+    position: relative;
+    color: black;
+    display: flex;
+    text-align: left;
+    padding-right: 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3%;
+
+
 }
 
-.hero__rightside {
+.hero__leftside__start{
     display: flex;
-
+    font-size: 3.3vw;
+    background: rgba(93, 76, 71, 0.3);
+    font-weight: bold;
 }
 
 .hero__text {
     display: flex;
-    font-size: 4vh;
+    font-size: 3vw;
+    background: rgba(93, 76, 71, 0.3);
+}
+
+.hero_undertext {
+    padding-top: 2%;
+    background: rgba(93, 76, 71, 0.3);
 
 }
 
 .hero__img {
-    width: 30vw;
-    height: auto;
-    border-radius: 25%;
+
 }
 
-.Portfolio {
+.Portfolio__heading{
+    padding-left: 3%;
 }
 
 .Portfolio__Projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .Portfolio__img {
@@ -123,8 +211,8 @@ body {
 
 .About-me__text-wrapper {
     margin-bottom: 5%;
-    margin-left: 5%;
-
+    margin-left: 3%;
+    margin-top: 1%;
 }
 
 .About-me__picture-wrapper {
@@ -154,31 +242,56 @@ body {
             }
 
 .Contact-me__LinkedIn {
-    border: grey solid 1px;
-    width: 18vw;
-    padding: 5px;
+    display: inline-block;
+    width: 200px;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    background: white;
+
 }
 
 .Contact-me__GitHub {
-    border: grey solid 1px;
-    width: 18vw;
-    padding: 5px;
+    display: inline-block;
+    width: 200px;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    background: white;
 
 }
 
 .Contact-me__Email {
-    border: grey solid 1px;
-    width: 18vw;
-    padding: 5px;
+    display: inline-block;
+    width: 200px;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    background: white;
 
 }
 
 .Contact-me__headerwrapper {
     justify-content:flex-end ;
     display: flex;
+    padding-right: 5%;
 }
 
-.Portfolio__icon {
+.Contact-me__text-wrapper {
+    padding: 0 5% 0 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.contact-me__icon {
     width: 5vw;
     height: auto;
     padding: 0;
@@ -187,9 +300,13 @@ body {
 }
 
 
+.About-me {
+    padding-top: 30px;
+}
+
 .About-me__heading-wrapper{
     font-size: 20px;
-    padding-left: 5%;
+    padding-left: 3%;
 }
 
 .About-me__heading {
@@ -197,20 +314,39 @@ body {
     padding: 0;
 }
 
-.Portfolio__iconwrapper {
+
+
+.contact-me__iconwrapper {
     margin: 0;
     padding: 0;
+
+}
+.Portfolio__heading {
+    padding-right: 3%;
 }
 
-.Portfolio__heading {
+.Portfolio__heading-wrapper {
     font-size: 20px;
     padding-left: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.Contact-me__under-text {
+    padding-top: 1%;
 }
 
 .Contact-me__text {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    font-size: 14px;
+    color: gray;
+    margin: 4px 0 0;
+}
+
+.Contact-me__icon-header {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
 }
 
 .Footer {

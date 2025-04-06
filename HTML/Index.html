@@ -7,53 +7,57 @@
     <title>My Personal-Site</title>
 </head>
 <body>
+
 <header class="header">
-    <div class="header__logo">LOGONAME</div>
-    <div class="header__menu">
-        <div class="header__about">ABOUT</div>
-        <div class="header__work">WORK</div>
-        <div class="header__contact">CONTACT</div>
-    </div>
+    <div class="header__logo">OOSTERWOUD</div>
+    <ul class="header__menu">
+        <li><a href="default.asp" class="header__point header__about">ABOUT</a></li>
+        <li><a href="news.asp" class="header__point header__work">WORK</a></li>
+        <li><a href="contact.asp" class="header__point header__contact">CONTACT</a></li>
+    </ul>
 </header>
+
+<!-- Hero section with background image -->
 <div class="hero">
-    <div class="hero__leftside">
-        <p class="hero__text">amet nisi ipsum ea proident do ea ut laboris ut dolore excepteur officia et
-            dolor amet ad reprehenderit exercitation irure proident occaecat adipisicing
-            fugiat dolore ullamco qui occaecat eu amet ex in pariatur culpa</p>
-        <p class="hero_undertext">Currently working @YourMum</p>
+    <div class="hero__background">
+        <img src="../assets/hintergrund-hero.jpeg" alt="hero" class="hero__img">
     </div>
-    <div class="hero__rightside">
-
-        <img src="../assets/pictureofme.webp" alt="picture of an statue" class="hero__img">
-
+    <div class="hero__leftside">
+        <p class="her__leftside__start">Hi, I'm Ruurd,</p>
+        <p class="hero__text">
+            an Apprentice Software Developer based in Berlin and
+            on the exciting journey of building my first projects.
+            I am passionately committed to learning code exploring the fast world of
+            technology.
+        </p>
+        <p class="hero_undertext">Currently working @aCompany</p>
     </div>
 </div>
-<div class="Portfolio">
-    <div class="Portfolio__heading">
-        <h2>Selected Works</h2>
+
+<h2 class="Portfolio__heading">Selected Works</h2>
+</div>
+<div class="Portfolio__Projects">
+    <div class="Porfolio__PorjektOne">
+        <img src="../assets/mockup1.webp" alt="mockup" class="Portfolio__img">
+        <h3 class="Portfolio__Projektname">Landgasthof-Askanien</h3>
+        <p class="Portfolio__Projectdesciption">Eine Restaurant Website mit Buchungsmöglichkeiten</p>
     </div>
-    <div class="Portfolio__Projects">
-        <div class="Porfolio__PorjektOne">
-            <img src="../assets/mockup1.webp" alt="mockup" class="Portfolio__img">
-            <h3 class="Portfolio__Projektname">Project Name One</h3>
-            <p class="Portfolio__Projectdesciption">est velit veniam laborum sit</p>
-        </div>
-        <div class="Porfolio__PorjektTwo">
-            <img src="../assets/mockup4.webp" alt="mockup" class="Portfolio__img">
-            <h3 class="Portfolio__Projektname">Project Name Two</h3>
-            <p class="Portfolio__Projectdesciption">est velit veniam laborum sit</p>
-        </div>
-        <div class="Porfolio__PorjektThree">
-            <img src="../assets/mockup3.webp" alt="mockup" class="Portfolio__img">
-            <h3 class="Portfolio__Projektname">Project Name Three</h3>
-            <p class="Portfolio__Projectdesciption">est velit veniam laborum sit</p>
-        </div>
-        <div class="Porfolio__PorjektFour">
-            <img src="../assets/mockup4.webp" alt="mockup" class="Portfolio__img">
-            <h3 class="Portfolio__Projektname">Project Name Four</h3>
-            <p class="Portfolio__Projectdesciption">est velit veniam laborum sit</p>
-        </div>
+    <div class="Porfolio__PorjektTwo">
+        <img src="../assets/mockup4.webp" alt="mockup" class="Portfolio__img">
+        <h3 class="Portfolio__Projektname">Rüstzeitheim Schorfheide</h3>
+        <p class="Portfolio__Projectdesciption">Eine Website für ein Freizeitheim</p>
     </div>
+    <div class="Porfolio__PorjektThree">
+        <img src="../assets/mockup3.webp" alt="mockup" class="Portfolio__img">
+        <h3 class="Portfolio__Projektname">Die Kritikerin</h3>
+        <p class="Portfolio__Projectdesciption">Eine Website für Theater Kritiken</p>
+    </div>
+    <div class="Porfolio__PorjektFour">
+        <img src="../assets/mockup4.webp" alt="mockup" class="Portfolio__img">
+        <h3 class="Portfolio__Projektname">Projekt 4</h3>
+        <p class="Portfolio__Projectdesciption">Coming soon</p>
+    </div>
+</div>
 </div>
 
 <div class="About-me">
@@ -62,9 +66,10 @@
     </div>
     <div class="About-me__text-wrapper">
         <p class="About-me__text">
-            labore est velit ipsum sit dolore ex excepteur pariatur anim nulla incididunt ex
-            Lorem amet laboris sint sit do labore ex duis voluptate eiusmod officia pariatur ex
-            quis tempor exercitation eiusmod esse ipsum laborum labore irure sint voluptate sunt aute
+            There’s a lot to know about me, but here are some facts:
+            I have a huge sweet tooth, I enjoy very long bike tours,
+            and I’m an expert handyman. While these are only a few thing,
+            I’ll let you guess which one might not be entirely true!
         </p>
     </div>
     <div class="About-me__picture-wrapper">
@@ -83,48 +88,54 @@
 
 <div class="Contact-me">
     <div class="Contact-me__headerwrapper">
-        <h2 class="Contact-me__header">Contact me</h2>
+        <h2 class="Contact-me__header">Contact</h2>
     </div>
     <div class="Contact-me__text-wrapper">
-        <p class="Contact-me__text">do laboris sit sint sunt adipisicing consequat</p>
+        <p class="Contact-me__under-text">do laboris sit sint sunt adipisicing consequat</p>
     </div>
 
     <div class="Contact-me__social-profiles">
 
-        <div class="Contact-me__LinkedIn">
-            <div class="Portfolio__iconwrapper">
-                <img src="../assets/linkedinicon.png" alt="linkedin icon" class="Portfolio__icon">
-                <p class="Contact-me__text">LinkedIn</p>
-                <p class="Contact-me__text">View Account</p>
+        <a href="https://linkedin.com/in/ruurd-oosterwoud-0ba4831a9">
+            <div class="Contact-me__LinkedIn">
+                <div class="contact-me__iconwrapper">
+                    <img src="../assets/linkedinicon.png" alt="linkedin icon" class="contact-me__icon">
+                    <p class="Contact-me__icon-header">LinkedIn</p>
+                    <p class="Contact-me__text">View Account</p>
+                </div>
             </div>
-        </div>
-
-        <div class="Contact-me__GitHub">
-            <div class="Portfolio__iconwrapper">
-                <img src="../assets/githubicon.svg" alt="linkedin icon" class="Portfolio__icon">
-                <p class="Contact-me__text">Github</p>
-                <p class="Contact-me__text">View Account</p>
-            </div>
-        </div>
+        </a>
 
 
-        <div class="Contact-me__Email">
-            <div class="Portfolio__iconwrapper">
-                <img src="../assets/mailicon.svg" alt="linkedin icon" class="Portfolio__icon">
-                <p class="Contact-me__text">E-Mail</p>
-                <p class="Contact-me__text">test@email.com</p>
+        <a href="https://github.com/Ruurdoos">
+            <div class="Contact-me__GitHub">
+                <div class="contact-me__iconwrapper">
+                    <img src="../assets/githubicon.svg" alt="linkedin icon" class="contact-me__icon">
+                    <p class="Contact-me__icon-header">Github</p>
+                    <p class="Contact-me__text">View Account</p>
+                </div>
             </div>
-        </div>
+        </a>
+
+        <a href="mailto:test@test.me">
+            <div class="Contact-me__Email">
+                <div class="contact-me__iconwrapper">
+                    <img src="../assets/mailicon.svg" alt="linkedin icon" class="contact-me__icon">
+                    <p class="Contact-me__icon-header">E-Mail</p>
+                    <p class="Contact-me__text">test@email.com</p>
+                </div>
+            </div>
+        </a>
     </div>
 </div>
 </body>
 <footer>
     <div class="Footer">
         <div class="line__wrapper">
-        <hr class="Footer__line">
+            <hr class="Footer__line">
         </div>
         <div class="text__wrapper">
-        <div class="Footer__text">© ruuoosterwoud 2025</div>
+            <div class="Footer__text">© ruuoosterwoud 2025</div>
         </div>
     </div>
 </footer>
