@@ -1,143 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/main.css">
-    <title>My Personal-Site</title>
+    <!-- Geist Font von Vercel (CDN Link - einfacher als lokale Installation für dieses Beispiel) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans@5.0.1/latin.min.css">
+    <link rel="stylesheet" href="../CSS/style.css"> <!-- Geänderter CSS Dateiname -->
+    <title>Ruurd Oosterwoud | Software Developer</title> <!-- Aussagekräftigerer Titel -->
 </head>
 <body>
 
 <header class="header">
-    <div class="header__logo">OOSTERWOUD</div>
-    <ul class="header__menu">
-        <li><a href="default.asp" class="header__point header__about">ABOUT</a></li>
-        <li><a href="news.asp" class="header__point header__work">WORK</a></li>
-        <li><a href="contact.asp" class="header__point header__contact">CONTACT</a></li>
-    </ul>
+    <div class="container header__container">
+        <a href="#" class="header__logo">OOSTERWOUD</a>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a href="#about" class="header__link">ABOUT</a></li>
+                <li><a href="#work" class="header__link">WORK</a></li>
+                <li><a href="#contact" class="header__link">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<!-- Hero section with background image -->
-<div class="hero">
-    <div class="hero__background">
-        <img src="../assets/hintergrund-hero.jpeg" alt="hero" class="hero__img">
-    </div>
-    <div class="hero__leftside">
-        <p class="her__leftside__start">Hi, I'm Ruurd,</p>
-        <p class="hero__text">
-            an Apprentice Software Developer based in Berlin and
-            on the exciting journey of building my first projects.
-            I am passionately committed to learning code exploring the fast world of
-            technology.
-        </p>
-        <p class="hero_undertext">Currently working @aCompany</p>
-    </div>
-</div>
-
-<h2 class="Portfolio__heading">Selected Works</h2>
-</div>
-<div class="Portfolio__Projects">
-    <div class="Porfolio__PorjektOne">
-        <img src="../assets/mockup1.webp" alt="mockup" class="Portfolio__img">
-        <h3 class="Portfolio__Projektname">Landgasthof-Askanien</h3>
-        <p class="Portfolio__Projectdesciption">Eine Restaurant Website mit Buchungsmöglichkeiten</p>
-    </div>
-    <div class="Porfolio__PorjektTwo">
-        <img src="../assets/mockup4.webp" alt="mockup" class="Portfolio__img">
-        <h3 class="Portfolio__Projektname">Rüstzeitheim Schorfheide</h3>
-        <p class="Portfolio__Projectdesciption">Eine Website für ein Freizeitheim</p>
-    </div>
-    <div class="Porfolio__PorjektThree">
-        <img src="../assets/mockup3.webp" alt="mockup" class="Portfolio__img">
-        <h3 class="Portfolio__Projektname">Die Kritikerin</h3>
-        <p class="Portfolio__Projectdesciption">Eine Website für Theater Kritiken</p>
-    </div>
-    <div class="Porfolio__PorjektFour">
-        <img src="../assets/mockup4.webp" alt="mockup" class="Portfolio__img">
-        <h3 class="Portfolio__Projektname">Projekt 4</h3>
-        <p class="Portfolio__Projectdesciption">Coming soon</p>
-    </div>
-</div>
-</div>
-
-<div class="About-me">
-    <div class="About-me__heading-wrapper">
-        <h2 class="About-me__heading">About Me</h2>
-    </div>
-    <div class="About-me__text-wrapper">
-        <p class="About-me__text">
-            There’s a lot to know about me, but here are some facts:
-            I have a huge sweet tooth, I enjoy very long bike tours,
-            and I’m an expert handyman. While these are only a few thing,
-            I’ll let you guess which one might not be entirely true!
-        </p>
-    </div>
-    <div class="About-me__picture-wrapper">
-        <div class="About-me__firstimg-wrapper">
-            <img class="About-me__img" src="../assets/example.webp" alt="pictureofme">
+<main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero__background">
+            <!-- Das Hintergrundbild wird jetzt über CSS gesetzt für bessere Kontrolle -->
         </div>
-        <div class="About-me__secondimg-wrapper">
-            <img class="About-me__img" src="../assets/example.webp" alt="pictureofme">
+        <div class="container hero__content">
+            <div class="hero__text-wrapper">
+                <h1 class="hero__title">Hi, I'm Ruurd,</h1>
+                <p class="hero__subtitle">
+                    an Apprentice Software Developer based in Berlin, passionate about building projects and exploring technology.
+                </p>
+                <p class="hero__status">Currently working @aCompany</p>
+            </div>
         </div>
-        <div class="About-me__thirdimg-wrapper">
-            <img class="About-me__img" src="../assets/example.webp" alt="pictureofme">
-        </div>
-    </div>
-</div>
+    </section>
 
-
-<div class="Contact-me">
-    <div class="Contact-me__headerwrapper">
-        <h2 class="Contact-me__header">Contact</h2>
-    </div>
-    <div class="Contact-me__text-wrapper">
-        <p class="Contact-me__under-text">do laboris sit sint sunt adipisicing consequat</p>
-    </div>
-
-    <div class="Contact-me__social-profiles">
-
-        <a href="https://linkedin.com/in/ruurd-oosterwoud-0ba4831a9">
-            <div class="Contact-me__LinkedIn">
-                <div class="contact-me__iconwrapper">
-                    <img src="../assets/linkedinicon.png" alt="linkedin icon" class="contact-me__icon">
-                    <p class="Contact-me__icon-header">LinkedIn</p>
-                    <p class="Contact-me__text">View Account</p>
+    <!-- Work Section -->
+    <section id="work" class="work section-padding">
+        <div class="container">
+            <h2 class="section-title">Selected Works</h2>
+            <div class="work__grid">
+                <!-- Projekt 1 -->
+                <div class="project-card">
+                    <img src="../assets/mockup1.webp" alt="Mockup Landgasthof-Askanien Website" class="project-card__img">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Landgasthof-Askanien</h3>
+                        <p class="project-card__description">Eine Restaurant Website mit Buchungsmöglichkeiten</p>
+                    </div>
+                </div>
+                <!-- Projekt 2 -->
+                <div class="project-card">
+                    <img src="../assets/mockup4.webp" alt="Mockup Rüstzeitheim Schorfheide Website" class="project-card__img">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Rüstzeitheim Schorfheide</h3>
+                        <p class="project-card__description">Eine Website für ein Freizeitheim</p>
+                    </div>
+                </div>
+                <!-- Projekt 3 -->
+                <div class="project-card">
+                    <img src="../assets/mockup3.webp" alt="Mockup Die Kritikerin Website" class="project-card__img">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Die Kritikerin</h3>
+                        <p class="project-card__description">Eine Website für Theater Kritiken</p>
+                    </div>
+                </div>
+                <!-- Projekt 4 -->
+                <div class="project-card">
+                    <img src="../assets/mockup4.webp" alt="Mockup Projekt 4 Platzhalter" class="project-card__img">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Projekt 4</h3>
+                        <p class="project-card__description">Coming soon</p>
+                    </div>
                 </div>
             </div>
-        </a>
-
-
-        <a href="https://github.com/Ruurdoos">
-            <div class="Contact-me__GitHub">
-                <div class="contact-me__iconwrapper">
-                    <img src="../assets/githubicon.svg" alt="linkedin icon" class="contact-me__icon">
-                    <p class="Contact-me__icon-header">Github</p>
-                    <p class="Contact-me__text">View Account</p>
-                </div>
-            </div>
-        </a>
-
-        <a href="mailto:test@test.me">
-            <div class="Contact-me__Email">
-                <div class="contact-me__iconwrapper">
-                    <img src="../assets/mailicon.svg" alt="linkedin icon" class="contact-me__icon">
-                    <p class="Contact-me__icon-header">E-Mail</p>
-                    <p class="Contact-me__text">test@email.com</p>
-                </div>
-            </div>
-        </a>
-    </div>
-</div>
-</body>
-<footer>
-    <div class="Footer">
-        <div class="line__wrapper">
-            <hr class="Footer__line">
         </div>
-        <div class="text__wrapper">
-            <div class="Footer__text">© ruuoosterwoud 2025</div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about section-padding">
+        <div class="container about__container">
+            <div class="about__text-content">
+                <h2 class="section-title">About Me</h2>
+                <p class="about__text">
+                    There’s a lot to know about me, but here are some facts:
+                    I have a huge sweet tooth, I enjoy very long bike tours,
+                    and I’m an expert handyman. While these are only a few things,
+                    I’ll let you guess which one might not be entirely true!
+                </p>
+            </div>
+            <div class="about__image-gallery">
+                <!-- Bilder können hier anders angeordnet werden, z.B. leicht überlappend -->
+                <img class="about__img about__img--1" src="../assets/example.webp" alt="Bild von Ruurd 1">
+                <img class="about__img about__img--2" src="../assets/example.webp" alt="Bild von Ruurd 2">
+                <img class="about__img about__img--3" src="../assets/example.webp" alt="Bild von Ruurd 3">
+            </div>
         </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title section-title--right">Contact</h2>
+            <p class="contact__subtitle">Let's connect!</p>
+            <div class="contact__grid">
+                <!-- LinkedIn Card -->
+                <a href="https://linkedin.com/in/ruurd-oosterwoud-0ba4831a9" class="contact-card" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/linkedinicon.png" alt="LinkedIn Icon" class="contact-card__icon">
+                    <h3 class="contact-card__title">LinkedIn</h3>
+                    <p class="contact-card__text">View Profile</p>
+                    <span class="contact-card__arrow">→</span> <!-- Pfeil als visueller Hinweis -->
+                </a>
+                <!-- GitHub Card -->
+                <a href="https://github.com/Ruurdoos" class="contact-card" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/githubicon.svg" alt="GitHub Icon" class="contact-card__icon">
+                    <h3 class="contact-card__title">GitHub</h3>
+                    <p class="contact-card__text">View Profile</p>
+                    <span class="contact-card__arrow">→</span>
+                </a>
+                <!-- Email Card -->
+                <a href="mailto:test@test.me" class="contact-card">
+                    <img src="../assets/mailicon.svg" alt="Email Icon" class="contact-card__icon">
+                    <h3 class="contact-card__title">E-Mail</h3>
+                    <p class="contact-card__text">test@email.com</p>
+                    <span class="contact-card__arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__container">
+        <hr class="footer__line">
+        <p class="footer__text">© Ruurd Oosterwoud 2025</p>
     </div>
 </footer>
 
+</body>
 </html>
