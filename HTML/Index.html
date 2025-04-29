@@ -137,9 +137,13 @@
 <footer class="footer">
     <div class="container footer__container">
         <hr class="footer__line">
-        <p class="footer__text">© Ruurd Oosterwoud 2025</p>
+        <p class="footer__text">© Ruurd Oosterwoud
+            <span id="copyright-date">
+            </span></p>
     </div>
 </footer>
-
+<script>
+    document.getElementById('copyright-date').innerHTML = (new Date().getFullYear());
+</script>
 </body>
 </html>

@@ -189,8 +189,32 @@ p  { font-size: clamp(1rem, 2vw + 0.5rem, 1.1rem); margin-bottom: var(--space-sm
 }
 
 .hero__text-wrapper {
-    max-width: 520px; /* Begrenzt die Breite des Textes */
+    max-width: 540px; /* Begrenzt die Breite des Textes */
 }
+
+/* Animation Typing */
+
+.hero__text-wrapper p{
+    color: black;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em; /* Adjust as needed */
+    animation:
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
 
 .hero__title {
     margin-bottom: var(--space-xs);
