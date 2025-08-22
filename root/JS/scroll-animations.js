@@ -51,10 +51,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentScrollY = window.scrollY;
         
         if (currentScrollY > 100) {
-            header.style.background = 'rgba(10, 10, 10, 0.95)';
-            header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
+            header.style.background = 'rgba(248, 250, 252, 0.95)';
+            header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
         } else {
-            header.style.background = 'rgba(10, 10, 10, 0.8)';
+            header.style.background = 'rgba(248, 250, 252, 0.9)';
             header.style.boxShadow = 'none';
         }
 
