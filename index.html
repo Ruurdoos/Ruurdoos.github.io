@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Geist Font von Vercel (CDN Link - einfacher als lokale Installation für dieses Beispiel) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans@5.0.1/latin.min.css">
-    <link rel="stylesheet" href="root/CSS/style.css"> <!-- Geänderter CSS Dateiname -->
-    <title>Ruurd Oosterwoud | Software Developer</title> <!-- Aussagekräftigerer Titel -->
+    <link rel="stylesheet" href="root/CSS/style.css">
+    <title>Ruurd Oosterwoud | Software Developer</title>
 </head>
 <body>
 
 <header class="header">
     <div class="container header__container">
-        <a href="#" class="header__logo">OOSTERWOUD</a>
+        <a href="#" class="header__logo">RUURD.</a>
         <nav class="header__nav">
             <ul class="header__menu">
                 <li><a href="#about" class="header__link">ABOUT</a></li>
@@ -20,30 +19,58 @@
                 <li><a href="#contact" class="header__link">CONTACT</a></li>
             </ul>
         </nav>
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </header>
 
 <main>
-    <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="hero__background">
-            <!-- Das Hintergrundbild wird jetzt über CSS gesetzt für bessere Kontrolle -->
+            <div class="hero__dots" id="dots-container"></div>
+            <div class="hero__grid"></div>
         </div>
         <div class="container hero__content">
             <div class="hero__text-wrapper">
-                <h1 class="hero__title typewriter-line" data-text="Hi, I'm Ruurd,">&nbsp;</h1>
-                <p class="hero__subtitle typewriter-line" data-text="an Apprentice Software Developer based in Berlin, passionate about building projects and exploring technology.">&nbsp;</p>
-                <p class="hero__status typewriter-line" data-text="Currently working @Digitas">&nbsp;</p>
+                <div class="hero__badge">Software Developer</div>
+                <h1 class="hero__title">Hi, I'm <span class="hero__name">Ruurd</span></h1>
+                <p class="hero__subtitle">Passionate about creating digital experiences and building innovative solutions. Based in Berlin, exploring the intersection of design and technology.</p>
+                <div class="hero__cta">
+                    <a href="#work" class="hero__button">View My Work</a>
+                    <a href="#contact" class="hero__button hero__button--secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__code-block">
+                    <div class="code-line">
+                        <span class="code-keyword">const</span> 
+                        <span class="code-variable">developer</span> = {
+                    </div>
+                    <div class="code-line">
+                        <span class="code-property">name:</span> 
+                        <span class="code-string">'Ruurd'</span>,
+                    </div>
+                    <div class="code-line">
+                        <span class="code-property">role:</span> 
+                        <span class="code-string">'Software Developer'</span>,
+                    </div>
+                    <div class="code-line">
+                        <span class="code-property">location:</span> 
+                        <span class="code-string">'Berlin'</span>
+                    </div>
+                    <div class="code-line">};</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Work Section -->
     <section id="work" class="work section-padding">
         <div class="container">
             <h2 class="section-title">Selected Works</h2>
             <div class="work__grid">
-                <!-- Projekt 1 -->
                 <div class="project-card">
                     <img src="root/assets/mockup1.webp" alt="Mockup Landgasthof-Askanien Website" class="project-card__img">
                     <div class="project-card__content">
@@ -51,7 +78,6 @@
                         <p class="project-card__description">Eine Restaurant Website mit Buchungsmöglichkeiten</p>
                     </div>
                 </div>
-                <!-- Projekt 2 -->
                 <div class="project-card">
                     <img src="root/assets/mockup4.webp" alt="Mockup Rüstzeitheim Schorfheide Website" class="project-card__img">
                     <div class="project-card__content">
@@ -59,7 +85,6 @@
                         <p class="project-card__description">Eine Website für ein Freizeitheim</p>
                     </div>
                 </div>
-                <!-- Projekt 3 -->
                 <div class="project-card">
                     <img src="root/assets/mockup3.webp" alt="Mockup Die Kritikerin Website" class="project-card__img">
                     <div class="project-card__content">
@@ -67,7 +92,6 @@
                         <p class="project-card__description">Eine Website für Theater Kritiken</p>
                     </div>
                 </div>
-                <!-- Projekt 4 -->
                 <div class="project-card">
                     <img src="root/assets/mockup4.webp" alt="Mockup Projekt 4 Platzhalter" class="project-card__img">
                     <div class="project-card__content">
@@ -79,20 +103,18 @@
         </div>
     </section>
 
-    <!-- About Me Section -->
     <section id="about" class="about section-padding">
         <div class="container about__container">
             <div class="about__text-content">
                 <h2 class="section-title">About Me</h2>
                 <p class="about__text">
-                    There’s a lot to know about me, but here are some facts:
+                    There's a lot to know about me, but here are some facts:
                     I have a huge sweet tooth, I enjoy very long bike tours,
-                    and I’m an expert handyman. While these are only a few things,
-                    I’ll let you guess which one might not be entirely true!
+                    and I'm an expert handyman. While these are only a few things,
+                    I'll let you guess which one might not be entirely true!
                 </p>
             </div>
             <div class="about__image-gallery">
-                <!-- Bilder können hier anders angeordnet werden, z.B. leicht überlappend -->
                 <img class="about__img about__img--1" src="root/assets/hanyman.jpeg" alt="Bild von Ruurd 1">
                 <img class="about__img about__img--2" src="root/assets/long-bike-rides.jpeg" alt="Bild von Ruurd 2">
                 <img class="about__img about__img--3" src="root/assets/sweet-tooth.jpeg" alt="Bild von Ruurd 3">
@@ -100,27 +122,23 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact section-padding">
         <div class="container">
             <h2 class="section-title section-title--right">Contact</h2>
             <p class="contact__subtitle">Let's connect!</p>
             <div class="contact__grid">
-                <!-- LinkedIn Card -->
                 <a href="https://linkedin.com/in/ruurd-oosterwoud-0ba4831a9" class="contact-card" target="_blank" rel="noopener noreferrer">
                     <img src="root/assets/linkedinicon.png" alt="LinkedIn Icon" class="contact-card__icon">
                     <h3 class="contact-card__title">LinkedIn</h3>
                     <p class="contact-card__text">View Profile</p>
-                    <span class="contact-card__arrow">→</span> <!-- Pfeil als visueller Hinweis -->
+                    <span class="contact-card__arrow">→</span>
                 </a>
-                <!-- GitHub Card -->
                 <a href="https://github.com/Ruurdoos" class="contact-card" target="_blank" rel="noopener noreferrer">
                     <img src="root/assets/githubicon.svg" alt="GitHub Icon" class="contact-card__icon">
                     <h3 class="contact-card__title">GitHub</h3>
                     <p class="contact-card__text">View Profile</p>
                     <span class="contact-card__arrow">→</span>
                 </a>
-                <!-- Email Card -->
                 <a href="mailto:test@test.me" class="contact-card">
                     <img src="root/assets/mailicon.png" alt="Email Icon" class="contact-card__icon">
                     <h3 class="contact-card__title">E-Mail</h3>
@@ -131,6 +149,12 @@
         </div>
     </section>
 </main>
+
+<button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 4L4 12H9V20H15V12H20L12 4Z" fill="currentColor"/>
+    </svg>
+</button>
 
 <footer class="footer">
     <div class="container footer__container">
@@ -143,8 +167,7 @@
 <script>
     document.getElementById('copyright-date').innerHTML = (new Date().getFullYear());
 </script>
-<script src="root/JS/typewriter.js"></script>
+<script src="root/JS/dots-generator.js"></script>
+<script src="root/JS/scroll-animations.js"></script>
 </body>
 </html>
-
-// Test file
