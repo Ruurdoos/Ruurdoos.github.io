@@ -115,13 +115,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 const moveX = (distanceX / distance) * strength * config.maxMovement;
                 const moveY = (distanceY / distance) * strength * config.maxMovement;
                 
-                // Skalierung und Opacity
+                // Skalierung
                 const scale = 1 + (strength * (config.maxScale - 1));
-                const opacity = 0.4 + (strength * 0.6);
+
                 
                 // Transform anwenden
                 dot.style.transform = `translate(${moveX}px, ${moveY}px) scale(${scale})`;
-                dot.style.opacity = opacity;
+
                 
                 // Aktuelle Position speichern
                 dot.currentX = dot.originalX + moveX;
@@ -129,7 +129,6 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 // Zurück zur ursprünglichen Position
                 dot.style.transform = 'translate(0px, 0px) scale(1)';
-                dot.style.opacity = 0.4;
                 dot.currentX = dot.originalX;
                 dot.currentY = dot.originalY;
             }
@@ -142,7 +141,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function resetDots() {
         dots.forEach(dot => {
             dot.style.transform = 'translate(0px, 0px) scale(1)';
-            dot.style.opacity = 0.4;
             dot.currentX = dot.originalX;
             dot.currentY = dot.originalY;
         });
